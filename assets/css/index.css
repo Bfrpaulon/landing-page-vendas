@@ -1,18 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+video {
+    width: 400px;
+    position: relative;
+    left: 20px;
 }
 
-html,
-body {
-    width: 100%;
-}
-
-h1 {
-    margin-top: 20px;
-}
-
-a {
-    text-decoration: none;
+nav img {
+    opacity: 0.7;
+    border-radius: 50px 50px 200px 200px;
+    -webkit-border-radius: 50px 50px 200px 200px;
+    -moz-border-radius: 50px 50px 200px 200px;
+    -ms-border-radius: 50px 50px 200px 200px;
+    -o-border-radius: 50px 50px 200px 200px;
 }
