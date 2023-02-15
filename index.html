@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gyroscopic Powerball Autostart - PowerFit</title>
     <link href="https://unpkg.com/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/index.js"></script>
 </head>
 
 <body class="bg-gray-100">
     <nav class="bg-purple-600 text-white py-4">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center">
-            <a href=""><img class="w-48" src="/assets/img/logo.JPG" alt="Logo da Power Fit"></a>
+            <a href=""><img class="w-48" src="/assets/img/logo.JPG" alt="Power Fit Logo"></a>
         </div>
     </nav>
     <main>
         <section id="content-hero" class="bg-purple-600 text-white py-16">
             <div class="max-w-7xl mx-auto lg:px-8 flex items-center justify-center flex-wrap">
                 <div id="content-cta" class="md:w-1/2">
-                    <h1 class="text-3xl font-bold mb-4 text-center"> Lançamento Gyroscopic Powerball Autostart</h1>
-                    <p class="text-lg mb-8 text-justify">O equipamento de fitness que vai levar o seu treinamento para o próximo
-                        nível. Desenvolva sua força muscular, melhore a coordenação e aumente a resistência com a
-                        Gyroscopic Powerball Autostart da PowerFit.</p>
-                    <button class="animate-pulse bg-white text-purple-600 py-2 px-4 rounded hover:bg-purple-600 hover:text-white transition-colors mx-auto"
-                        href="#">Compre agora</button>
+                    <h1 class="text-3xl font-bold mb-4 text-center">Gyroscopic Powerball Autostart Launch</h1>
+                    <p class="text-lg mb-8 text-justify">The fitness gear that will take your workout into the next
+                        level. Build your muscle strength, improve coordination and increase endurance with the
+                        Gyroscopic Powerball Autostart by PowerFit.</p>
+                    <button
+                        class="animate-pulse bg-white text-purple-600 py-2 px-4 rounded hover:bg-purple-600 hover:text-white transition-colors mx-auto"
+                        onclick="semStock()"> Buy now</button>
                 </div>
                 <div class=" md:w-1/2 mx-auto">
                     <video src="/assets/videos/Gyro-ball.mp4" controls></video>
@@ -33,50 +35,56 @@
         </section>
         <section class="py-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Depoimentos de clientes</h2>
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Customer Testimonials</h2>
                 <div class="flex flex-col md:flex-row md:justify-center">
                     <div class="bg-white rounded-lg shadow-lg p-8 mb-8 md:mr-4 md:mb-0">
-                        <p class="text-gray-700 text-lg mb-4">"Comprei a Gyroscopic Powerball Autostart da PowerFit há
-                            um mês e já percebo uma grande diferença na minha força muscular e coordenação. Recomendo!"
+                        <p class="text-gray-700 text-lg mb-4">"I bought the Gyroscopic Powerball Autostart from PowerFit
+                            a few years ago
+                            a month and I already notice a big difference in my muscle strength and coordination. I
+                            recommend!"
                         </p>
                         <p class="text-gray-700 font-bold">Maria Silva</p>
                         <p class="text-gray-500">São Paulo, SP</p>
                     </div>
                     <div class="bg-white rounded-lg shadow-lg p-8 md:ml-4">
-                        <p class="text-gray-700 text-lg mb-4">"A Gyroscopic Powerball Autostart da PowerFit é o meu novo
-                            brinquedo favorito. É divertido de usar e me ajuda a manter a forma. Estou muito satisfeito
-                            com minha compra."</p>
+                        <p class="text-gray-700 text-lg mb-4">"The Gyroscopic Powerball Autostart by PowerFit is my new
+                            favorite toy. It's fun to use and helps me stay in shape. I am very satisfied
+                            with my purchase."</p>
                         <p class="text-gray-700 font-bold">José Santos</p>
                         <p class="text-gray-500">Rio de Janeiro, RJ</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section  class="bg-purple-600 text-white py-16">
-            <div id="content-benefits" class="max-w-7xl mx-auto  sm:px-6 lg:px-8 flex items-center justify-between">
+        <section class="bg-purple-600 text-white py-16">
+            <div id="content-benefits" class="max-w-7xl mx-auto sm:px-6 lg:px-8 flex items-center justify-between">
                 <div id="content-benefits-text">
-                    <h2 class="text-3xl font-bold mb-4">Por que escolher a Gyroscopic Powerball Autostart da PowerFit?
+                    <h2 class="text-3xl font-bold mb-4">Why choose the PowerFit Gyroscopic Powerball Autostart?
                     </h2>
                     <ul class="text-lg mb-8">
-                        <li class="mb-4 text-justify "><span class="font-bold ">Desenvolva força muscular:</span> A Gyroscopic
-                            Powerball Autostart da PowerFit é um equipamento de fitness altamente eficaz para fortalecer
-                            os braços, pulsos e mãos.</li>
-                        <li class="mb-4 text-justify "><span class="font-bold">Melhore a coordenação:</span> Treinar com a Powerball
-                            pode ajudar a melhorar a coordenação e o equilíbrio.</li>
-                        <li class="mb-4 text-justify "><span class="font-bold">Aumente a resistência:</span> Com a Powerball, é
-                            possível aumentar a resistência muscular e a força de preensão.</li>
-                        <li class="mb-4 text-justify "><span class="font-bold">Design portátil:</span> A Powerball é compacta e fácil de
-                            transportar, permitindo que você treine em qualquer lugar.</li>
+                        <li class="mb-4 text-justify "><span class="font-bold ">Build muscle strength:</span> A
+                            Gyroscopic
+                            Powerball Autostart by PowerFit is a highly effective fitness equipment to strengthen
+                            the arms, wrists and hands.</li>
+                        <li class="mb-4 text-justify "><span class="font-bold">Improve Coordination:</span> Powerball
+                            Training
+                            can help improve coordination and balance.</li>
+                        <li class="mb-4 text-justify "><span class="font-bold">Increase resistance:</span> With the
+                            Powerball, it's
+                            It is possible to increase muscle endurance and grip strength.</li>
+                        <li class="mb-4 text-justify "><span class="font-bold">Portable design:</span> The Powerball is
+                            compact and easy to
+                            carry, allowing you to train anywhere.</li>
                     </ul>
                 </div>
-                <img src="/assets/img/gyro-ball.png"
-                    alt="Gyroscopic Powerball Autostart" class="rounded-lg shadow-lg md:w-1/2 ml-5">
+                <img src="/assets/img/gyro-ball.png" alt="Gyroscopic Powerball Autostart"
+                    class="rounded-lg shadow-lg md:w-1/2 ml-5">
             </div>
         </section>
     </main>
     <footer class="bg-gray-800 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-center">PowerFit &copy; 2023. Todos os direitos reservados.</p>
+            <p class="text-center">PowerFit &copy; 2023. All rights reserved.</p>
         </div>
     </footer>
 </body>
