@@ -2,10 +2,61 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.content-hero {
+    margin: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
 video {
     width: 400px;
-    position: relative;
-    left: 20px;
+    margin: 20px auto;
+}
+
+@media (max-width: 1000px) {
+
+    
+    video {
+        width: 80%;
+    }
+
+    #content-cta {
+        display: flex;
+        margin: auto;
+        max-width: 80%;
+        flex-direction: column;
+    }
+
+    #content-benefits {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #content-benefits-text{
+        margin: auto;
+        justify-content: center;
+        width: 80%;
+    }
+
+    #content-benefits img {
+        margin: auto;
+        justify-content: center;
+        width: 80%;
+    }
+
+    button {
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
 }
 
 nav img {
@@ -15,4 +66,10 @@ nav img {
     -moz-border-radius: 50px 50px 200px 200px;
     -ms-border-radius: 50px 50px 200px 200px;
     -o-border-radius: 50px 50px 200px 200px;
+}
+
+#btn-cta {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
